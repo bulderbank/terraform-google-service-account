@@ -99,7 +99,7 @@ module "iam" {
   depends_on = [google_service_account.gsa]
 
   custom_roles = local.custom_roles
-  iam_members  = local.iam_members
+  iam_members  = local.iam_member
   iam_bindings = local.iam_bindings
 }
 
